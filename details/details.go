@@ -8,7 +8,7 @@ import (
 	"golang.org/x/net/html"
 )
 
-var detailLinkRegex = regexp.MustCompile(`.*\?(http.*)`)
+var detailLinkRegex = regexp.MustCompile(`.*\?(?:q=)?(http.*)`)
 
 func ParseDetails(doc *html.Node) *Details {
 	result := &Details{
@@ -151,11 +151,11 @@ func parseOtherImages(n *html.Node) []string {
 	if el == nil {
 		return res
 	}
-	images := parse.GetElementsByTag(el, "img")
-	for _, img := range images {
-		src, ok := parse.FindAttr(img, "src")
+	links := parse.GetElementsByClass(el, "fancy_groups")
+	for _, a := range links {
+		href, ok := parse.FindAttr(a, "href")
 		if ok {
-			res = append(res, src)
+			res = append(res, href)
 		}
 	}
 	return res

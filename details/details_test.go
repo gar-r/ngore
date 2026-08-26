@@ -25,11 +25,11 @@ func TestParseDetails(t *testing.T) {
 		assert.Equal(t, "https://imdb.com/title/tt0120844", details.ImdbLink)
 		assert.Equal(t, "103 perc", details.Length)
 		assert.Equal(t, "http://www.port.hu/star_trek_9._-_urlazadas_star_trek_-_insurrection/pls/fi/films.film_page?i_film_id=3626", details.OtherLink)
-		assert.Equal(t, "https://nc-img.cdn.l7cache.com/covers/RPev3b57i0mfKBgw", details.CoverImage)
+		assert.Equal(t, "https://nc-img.burst.sh/covers/RPev3b57i0mfKBgw", details.CoverImage)
 		assert.Equal(t, []string{
-			"https://nc-img.cdn.l7cache.com/6RGBnnrb7UmiwBwJ",
-			"https://nc-img.cdn.l7cache.com/xqlB6pY9VImCbXdE",
-			"https://nc-img.cdn.l7cache.com/qjA_Rk7yVC9fl_-7",
+			"https://nc-img.burst.sh/EvjeNybRGtEi-BNx",
+			"https://nc-img.burst.sh/6RGBnnrb7UVCOBwJ",
+			"https://nc-img.burst.sh/xqlB6pY9VIKfRXdE",
 		}, details.OtherImages)
 	})
 
@@ -49,11 +49,11 @@ func TestParseDetails(t *testing.T) {
 		assert.Equal(t, "https://imdb.com/title/tt0112178", details.ImdbLink)
 		assert.Equal(t, "45 perc", details.Length)
 		assert.Equal(t, "http://www.port.hu/star_trek:_voyager/pls/w/films.film_page?i_film_id=26841", details.OtherLink)
-		assert.Equal(t, "https://nc-img.cdn.l7cache.com/covers/lLBo6Kb7hPpSwXvW?24340072", details.CoverImage)
+		assert.Equal(t, "https://nc-img.burst.sh/covers/lLBo6Kb7hPpSwXvW?24340072", details.CoverImage)
 		assert.Equal(t, []string{
-			"https://nc-img.cdn.l7cache.com/mDQ42-vPqUVCM4yW?24340072",
-			"https://nc-img.cdn.l7cache.com/2lwBDJ70pc-fJ4N8?24340072",
-			"https://nc-img.cdn.l7cache.com/Evj4NOg3GI9h0eNx?24340072",
+			"https://nc-img.burst.sh/QoqB738Y0UzCd4kx?24340072",
+			"https://nc-img.burst.sh/mDQ42-vPqU6fo4yW?24340072",
+			"https://nc-img.burst.sh/2lwBDJ70pc7hr4N8?24340072",
 		}, details.OtherImages)
 	})
 
@@ -73,11 +73,11 @@ func TestParseDetails(t *testing.T) {
 		assert.Equal(t, "", details.ImdbLink)
 		assert.Equal(t, "", details.Length)
 		assert.Equal(t, "", details.OtherLink)
-		assert.Equal(t, "https://nc-img.cdn.l7cache.com/covers/jg_mpnRviRwfle8z?26990706", details.CoverImage)
+		assert.Equal(t, "https://nc-img.burst.sh/covers/jg_mpnRviRwfle8z?26990706", details.CoverImage)
 		assert.Equal(t, []string{
-			"https://nc-img.cdn.l7cache.com/y7D4rJ-oPT5C84vV?26990706",
-			"https://nc-img.cdn.l7cache.com/6ZV_31yAqiGfDepM?26990706",
-			"https://nc-img.cdn.l7cache.com/J7YBQElrjcGhqXdn?26990706",
+			"https://nc-img.burst.sh/Jl3X9v9W6fyCD_7R?26990706",
+			"https://nc-img.burst.sh/y7D4rJ-oPTbf74vV?26990706",
+			"https://nc-img.burst.sh/6ZV_31yAqiJhwepM?26990706",
 		}, details.OtherImages)
 	})
 
@@ -97,7 +97,7 @@ func TestParseDetails(t *testing.T) {
 		assert.Equal(t, "", details.ImdbLink)
 		assert.Equal(t, "", details.Length)
 		assert.Equal(t, "", details.OtherLink)
-		assert.Equal(t, "https://nc-img.cdn.l7cache.com/covers/DQ_2ZqxWT69io_yW", details.CoverImage)
+		assert.Equal(t, "https://nc-img.burst.sh/covers/DQ_2ZqxWT69io_yW", details.CoverImage)
 		assert.Empty(t, details.OtherImages)
 	})
 
@@ -117,11 +117,11 @@ func TestParseDetails(t *testing.T) {
 		assert.Equal(t, "", details.ImdbLink)
 		assert.Equal(t, "", details.Length)
 		assert.Equal(t, "", details.OtherLink)
-		assert.Equal(t, "https://nc-img.cdn.l7cache.com/covers/PxBzREgbSMlT-BbM?27057497", details.CoverImage)
+		assert.Equal(t, "https://nc-img.burst.sh/covers/PxBzREgbSMlT-BbM?27057497", details.CoverImage)
 		assert.Equal(t, []string{
-			"https://nc-img.cdn.l7cache.com/N-jB-ONG7C-CZ_0v?27057497",
-			"https://nc-img.cdn.l7cache.com/AL9XkMlLKCwf9XZl?27057497",
-			"https://nc-img.cdn.l7cache.com/kRPBvElwLTQhY4gw?27057497",
+			"https://nc-img.burst.sh/jvw_ZoJZkSrCzBNl?27057497",
+			"https://nc-img.burst.sh/N-jB-ONG7CRfz_0v?27057497",
+			"https://nc-img.burst.sh/AL9XkMlLKCLhlXZl?27057497",
 		}, details.OtherImages)
 	})
 
@@ -141,8 +141,8 @@ func TestParseDetails(t *testing.T) {
 		assert.Equal(t, "", details.ImdbLink)
 		assert.Equal(t, "", details.Length)
 		assert.Equal(t, "", details.OtherLink)
-		assert.Equal(t, "https://nc-img.cdn.l7cache.com/covers/EdeYZgjvCDrCLX-x", details.CoverImage)
-		assert.Equal(t, []string{"https://nc-img.cdn.l7cache.com/AL94kRDr2S2i94Zl"}, details.OtherImages)
+		assert.Equal(t, "https://nc-img.burst.sh/covers/EdeYZgjvCDrCLX-x", details.CoverImage)
+		assert.Equal(t, []string{"https://nc-img.burst.sh/N-jX-93vQTPizB0v"}, details.OtherImages)
 	})
 
 }
@@ -163,14 +163,14 @@ const movieHtml = `
 			<tbody>
 				<tr>
 					<td> <a class="fancy_groups" rel="g1365642"
-							href="https://nc-img.cdn.l7cache.com/EvjeNybRGtEi-BNx"><img
-								src="https://nc-img.cdn.l7cache.com/6RGBnnrb7UmiwBwJ" border="0"></a></td>
+							href="https://nc-img.burst.sh/EvjeNybRGtEi-BNx"><img
+								src="https://nc-img.burst.sh/6RGBnnrb7UmiwBwJ" border="0"></a></td>
 					<td> <a class="fancy_groups" rel="g1365642"
-							href="https://nc-img.cdn.l7cache.com/6RGBnnrb7UVCOBwJ"><img
-								src="https://nc-img.cdn.l7cache.com/xqlB6pY9VImCbXdE" border="0"></a></td>
+							href="https://nc-img.burst.sh/6RGBnnrb7UVCOBwJ"><img
+								src="https://nc-img.burst.sh/xqlB6pY9VImCbXdE" border="0"></a></td>
 					<td> <a class="fancy_groups" rel="g1365642"
-							href="https://nc-img.cdn.l7cache.com/xqlB6pY9VIKfRXdE"><img
-								src="https://nc-img.cdn.l7cache.com/qjA_Rk7yVC9fl_-7" border="0"></a></td>
+							href="https://nc-img.burst.sh/xqlB6pY9VIKfRXdE"><img
+								src="https://nc-img.burst.sh/qjA_Rk7yVC9fl_-7" border="0"></a></td>
 				</tr>
 				<tr>
 					<td align="center"><em>(720x304)</em></td>
@@ -250,7 +250,7 @@ const movieHtml = `
 			<tbody>
 				<tr>
 					<td class="inforbar_img" align="center"><img
-							src="https://nc-img.cdn.l7cache.com/covers/RPev3b57i0mfKBgw" alt="Borító"></td>
+							src="https://nc-img.burst.sh/covers/RPev3b57i0mfKBgw" alt="Borító"></td>
 					<td class="inforbar_txt">
 						<div class="infobar_title"> Star Trek 9. - Űrlázadás<br> (Star Trek: Insurrection)
 						</div>
@@ -297,12 +297,12 @@ const movieHtml = `
 								</tr>
 								<tr>
 									<td style="vertical-align:top;width:110px;">IMDb link:</td>
-									<td><a href="https://dereferer.link/?https://imdb.com/title/tt0120844"
+									<td><a href="https://none.st/?q=https://imdb.com/title/tt0120844"
 											target="_blank">https://imdb.com/title/tt0120844</a></td>
 								</tr>
 								<tr>
 									<td style="vertical-align:top;width:110px;">Egyéb link:</td>
-									<td><a href="https://dereferer.link/?http://www.port.hu/star_trek_9._-_urlazadas_star_trek_-_insurrection/pls/fi/films.film_page?i_film_id=3626"
+									<td><a href="https://none.st/?q=http://www.port.hu/star_trek_9._-_urlazadas_star_trek_-_insurrection/pls/fi/films.film_page?i_film_id=3626"
 											target="_blank">http://www.port.hu/star_trek_9...</a></td>
 								</tr>
 							</tbody>
@@ -362,14 +362,14 @@ const seriesHtml = `
 			<tbody>
 				<tr>
 					<td> <a class="fancy_groups" rel="g1972182"
-							href="https://nc-img.cdn.l7cache.com/QoqB738Y0UzCd4kx?24340072"><img
-								src="https://nc-img.cdn.l7cache.com/mDQ42-vPqUVCM4yW?24340072" border="0"></a></td>
+							href="https://nc-img.burst.sh/QoqB738Y0UzCd4kx?24340072"><img
+								src="https://nc-img.burst.sh/mDQ42-vPqUVCM4yW?24340072" border="0"></a></td>
 					<td> <a class="fancy_groups" rel="g1972182"
-							href="https://nc-img.cdn.l7cache.com/mDQ42-vPqU6fo4yW?24340072"><img
-								src="https://nc-img.cdn.l7cache.com/2lwBDJ70pc-fJ4N8?24340072" border="0"></a></td>
+							href="https://nc-img.burst.sh/mDQ42-vPqU6fo4yW?24340072"><img
+								src="https://nc-img.burst.sh/2lwBDJ70pc-fJ4N8?24340072" border="0"></a></td>
 					<td> <a class="fancy_groups" rel="g1972182"
-							href="https://nc-img.cdn.l7cache.com/2lwBDJ70pc7hr4N8?24340072"><img
-								src="https://nc-img.cdn.l7cache.com/Evj4NOg3GI9h0eNx?24340072" border="0"></a></td>
+							href="https://nc-img.burst.sh/2lwBDJ70pc7hr4N8?24340072"><img
+								src="https://nc-img.burst.sh/Evj4NOg3GI9h0eNx?24340072" border="0"></a></td>
 				</tr>
 				<tr>
 					<td align="center"><em>(640x480)</em></td>
@@ -451,7 +451,7 @@ const seriesHtml = `
 			<tbody>
 				<tr>
 					<td class="inforbar_img" align="center"><img
-							src="https://nc-img.cdn.l7cache.com/covers/lLBo6Kb7hPpSwXvW?24340072" alt="Borító"></td>
+							src="https://nc-img.burst.sh/covers/lLBo6Kb7hPpSwXvW?24340072" alt="Borító"></td>
 					<td class="inforbar_txt">
 						<div class="infobar_title"> Star Trek: Voyager </div>
 						<table>
@@ -492,12 +492,12 @@ const seriesHtml = `
 								</tr>
 								<tr>
 									<td style="vertical-align:top;width:110px;">IMDb link:</td>
-									<td><a href="https://dereferer.link/?https://imdb.com/title/tt0112178"
+									<td><a href="https://none.st/?q=https://imdb.com/title/tt0112178"
 											target="_blank">https://imdb.com/title/tt0112178</a></td>
 								</tr>
 								<tr>
 									<td style="vertical-align:top;width:110px;">Egyéb link:</td>
-									<td><a href="https://dereferer.link/?http://www.port.hu/star_trek:_voyager/pls/w/films.film_page?i_film_id=26841"
+									<td><a href="https://none.st/?q=http://www.port.hu/star_trek:_voyager/pls/w/films.film_page?i_film_id=26841"
 											target="_blank">http://www.port.hu/star_trek:_...</a></td>
 								</tr>
 							</tbody>
@@ -602,16 +602,16 @@ const gameHtml = `
 					<tbody>
 						<tr>
 							<td> <a class="fancy_groups" rel="g3176798"
-									href="https://nc-img.cdn.l7cache.com/Jl3X9v9W6fyCD_7R?26990706"><img
-										src="https://nc-img.cdn.l7cache.com/y7D4rJ-oPT5C84vV?26990706" border="0"></a>
+									href="https://nc-img.burst.sh/Jl3X9v9W6fyCD_7R?26990706"><img
+										src="https://nc-img.burst.sh/y7D4rJ-oPT5C84vV?26990706" border="0"></a>
 							</td>
 							<td> <a class="fancy_groups" rel="g3176798"
-									href="https://nc-img.cdn.l7cache.com/y7D4rJ-oPTbf74vV?26990706"><img
-										src="https://nc-img.cdn.l7cache.com/6ZV_31yAqiGfDepM?26990706" border="0"></a>
+									href="https://nc-img.burst.sh/y7D4rJ-oPTbf74vV?26990706"><img
+										src="https://nc-img.burst.sh/6ZV_31yAqiGfDepM?26990706" border="0"></a>
 							</td>
 							<td> <a class="fancy_groups" rel="g3176798"
-									href="https://nc-img.cdn.l7cache.com/6ZV_31yAqiJhwepM?26990706"><img
-										src="https://nc-img.cdn.l7cache.com/J7YBQElrjcGhqXdn?26990706" border="0"></a>
+									href="https://nc-img.burst.sh/6ZV_31yAqiJhwepM?26990706"><img
+										src="https://nc-img.burst.sh/J7YBQElrjcGhqXdn?26990706" border="0"></a>
 							</td>
 						</tr>
 						<tr>
@@ -689,7 +689,7 @@ const gameHtml = `
 					<tbody>
 						<tr>
 							<td class="inforbar_img" align="center"><img
-									src="https://nc-img.cdn.l7cache.com/covers/jg_mpnRviRwfle8z?26990706" alt="Borító">
+									src="https://nc-img.burst.sh/covers/jg_mpnRviRwfle8z?26990706" alt="Borító">
 							</td>
 						</tr>
 					</tbody>
@@ -778,7 +778,7 @@ const gameHtml = `
 					<br>Baldur's Gate: Siege of Dragonspear
 					<br>Baldur's Gate: Faces of Good and Evil
 					<br>
-					<br><a href="https://dereferer.link/?https://www.gog.com/game/baldurs_gate_enhanced_edition"
+					<br><a href="https://none.st/?q=https://www.gog.com/game/baldurs_gate_enhanced_edition"
 						target="_blank" class="bb-url">https://www.gog.com/game/baldurs_gate_enhanced_edition</a>
 					<br>
 					<br><span style="text-decoration:underline">Telepítés:</span>
@@ -1052,7 +1052,7 @@ $(document).ready(function(){
 			<tbody>
 				<tr>
 					<td class="inforbar_img" align="center"><img
-							src="https://nc-img.cdn.l7cache.com/covers/DQ_2ZqxWT69io_yW" alt="Borító"></td>
+							src="https://nc-img.burst.sh/covers/DQ_2ZqxWT69io_yW" alt="Borító"></td>
 					<td class="inforbar_txt">
 						<table>
 							<tbody>
@@ -1075,7 +1075,7 @@ $(document).ready(function(){
 		<br><span style="text-decoration:underline">Album címe</span>: Greatest Hits
 		<br><span style="text-decoration:underline">Megjelenés éve</span>: 2014
 		<br><a
-			href="https://dereferer.link/?http://www.ultramusicstore.com/linkin-park-greatest-hits-2cd-set-digipack-p-4221.html"
+			href="https://none.st/?q=http://www.ultramusicstore.com/linkin-park-greatest-hits-2cd-set-digipack-p-4221.html"
 			target="_blank"
 			class="bb-url">http://www.ultramusicstore.com/linkin-park-greatest-hits-2cd-set-digipack-p-4221.html</a>
 		<br>
@@ -1163,14 +1163,14 @@ const appHtml = `
 			<tbody>
 				<tr>
 					<td> <a class="fancy_groups" rel="g3194806"
-							href="https://nc-img.cdn.l7cache.com/jvw_ZoJZkSrCzBNl?27057497"><img
-								src="https://nc-img.cdn.l7cache.com/N-jB-ONG7C-CZ_0v?27057497" border="0"></a></td>
+							href="https://nc-img.burst.sh/jvw_ZoJZkSrCzBNl?27057497"><img
+								src="https://nc-img.burst.sh/N-jB-ONG7C-CZ_0v?27057497" border="0"></a></td>
 					<td> <a class="fancy_groups" rel="g3194806"
-							href="https://nc-img.cdn.l7cache.com/N-jB-ONG7CRfz_0v?27057497"><img
-								src="https://nc-img.cdn.l7cache.com/AL9XkMlLKCwf9XZl?27057497" border="0"></a></td>
+							href="https://nc-img.burst.sh/N-jB-ONG7CRfz_0v?27057497"><img
+								src="https://nc-img.burst.sh/AL9XkMlLKCwf9XZl?27057497" border="0"></a></td>
 					<td> <a class="fancy_groups" rel="g3194806"
-							href="https://nc-img.cdn.l7cache.com/AL9XkMlLKCLhlXZl?27057497"><img
-								src="https://nc-img.cdn.l7cache.com/kRPBvElwLTQhY4gw?27057497" border="0"></a></td>
+							href="https://nc-img.burst.sh/AL9XkMlLKCLhlXZl?27057497"><img
+								src="https://nc-img.burst.sh/kRPBvElwLTQhY4gw?27057497" border="0"></a></td>
 				</tr>
 				<tr>
 					<td align="center"><em>(328x303)</em></td>
@@ -1247,7 +1247,7 @@ $(document).ready(function(){
 			<tbody>
 				<tr>
 					<td class="inforbar_img" align="center"><img
-							src="https://nc-img.cdn.l7cache.com/covers/PxBzREgbSMlT-BbM?27057497" alt="Borító"></td>
+							src="https://nc-img.burst.sh/covers/PxBzREgbSMlT-BbM?27057497" alt="Borító"></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1295,9 +1295,9 @@ $(document).ready(function(){
 		<br>- Támogatja az OpenSSL 1.1 vagy újabb verziót.
 		<br>
 		<br><span class="highlight">Hivatalos oldalak:</span>
-		<br><a href="https://dereferer.link/?https://www.ghisler.com/" target="_blank"
+		<br><a href="https://none.st/?q=https://www.ghisler.com/" target="_blank"
 			class="bb-url">https://www.ghisler.com/</a>
-		<br><a href="https://dereferer.link/?https://www.totalcommander.hu/" target="_blank"
+		<br><a href="https://none.st/?q=https://www.totalcommander.hu/" target="_blank"
 			class="bb-url">https://www.totalcommander.hu/</a>
 		<br>
 		<br><span class="highlight">Támogatott operációs rendszerek:</span>
@@ -1342,8 +1342,8 @@ const bookHtml = `
 			<tbody>
 				<tr>
 					<td> <a class="fancy_groups" rel="g1031296"
-							href="https://nc-img.cdn.l7cache.com/N-jX-93vQTPizB0v"><img
-								src="https://nc-img.cdn.l7cache.com/AL94kRDr2S2i94Zl" border="0"></a></td>
+							href="https://nc-img.burst.sh/N-jX-93vQTPizB0v"><img
+								src="https://nc-img.burst.sh/AL94kRDr2S2i94Zl" border="0"></a></td>
 				</tr>
 				<tr>
 					<td align="center"><em>(183x298)</em></td>
@@ -1417,7 +1417,7 @@ $(document).ready(function(){
 			<tbody>
 				<tr>
 					<td class="inforbar_img" align="center"><img
-							src="https://nc-img.cdn.l7cache.com/covers/EdeYZgjvCDrCLX-x" alt="Borító"></td>
+							src="https://nc-img.burst.sh/covers/EdeYZgjvCDrCLX-x" alt="Borító"></td>
 					<td class="inforbar_txt">
 						<table>
 							<tbody>
@@ -1460,7 +1460,7 @@ $(document).ready(function(){
 		<br>A tűz és jég dala az elmúlt évtized egyik legjelentősebb fantasy sorozata, minden kötete letehetetlen
 		olvasmány.
 		<br>
-		<br><a href="https://dereferer.link/?http://www.libri.hu/konyv/kiralyok-csataja.html" target="_blank"
+		<br><a href="https://none.st/?q=http://www.libri.hu/konyv/kiralyok-csataja.html" target="_blank"
 			class="bb-url">Link</a>
 	</div>
 	<div class="torrent_leiras">
