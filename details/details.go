@@ -143,19 +143,21 @@ func parseCoverImage(n *html.Node) string {
 
 func parseOtherImages(n *html.Node) []string {
 	res := make([]string, 0)
-	div := parse.GetElementByClass(n, "fobox_tartalom")
-	if div == nil {
-		return res
-	}
-	el := parse.GetElementByTag(div, "center")
-	if el == nil {
-		return res
-	}
-	links := parse.GetElementsByClass(el, "fancy_groups")
-	for _, a := range links {
-		href, ok := parse.FindAttr(a, "href")
-		if ok {
-			res = append(res, href)
+	divs := parse.GetElementsByClass(n, "fobox_tartalom")
+	for _, div := range divs {
+		el := parse.GetElementByTag(div, "center")
+		if el == nil {
+			continue
+		}
+		links := parse.GetElementsByClass(el, "fancy_groups")
+		for _, a := range links {
+			href, ok := parse.FindAttr(a, "href")
+			if ok {
+				res = append(res, href)
+			}
+		}
+		if len(res) > 0 {
+			break
 		}
 	}
 	return res
